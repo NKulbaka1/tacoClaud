@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build the Docker image
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
         run: docker-compose build --no-cache --force-rm
   test:
     runs-on: ubuntu-latest
